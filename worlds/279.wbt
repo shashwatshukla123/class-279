@@ -1,0 +1,99 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6382003818339864 0.5868701661752135 0.4982807247731255 2.282285977201134
+  position 0.023305287146251574 1.2864126992198262 9.913578624905357
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF Sphere Transform {
+  translation 4 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.34902 0.8 0.768627
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+      }
+    }
+  ]
+}
+DEF Cylinder Transform {
+  translation 3 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.8 0.24
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.6
+        radius 0.2
+        subdivision 24
+      }
+    }
+  ]
+}
+DEF Capsole Transform {
+  translation 2.1 -1.32 -0.32
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.8 0.24
+        roughness 0.2
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.3
+        radius 0.25
+        subdivision 24
+      }
+    }
+  ]
+}
+DEF Cone Transform {
+  translation 2 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.62 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.3
+        height 0.5
+        subdivision 36
+      }
+    }
+  ]
+}
+DEF Box Transform {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.264
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.5 0.3 0.4
+      }
+    }
+  ]
+}
+RectangleArena {
+}
